@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1025"/>
+      <stop offset="100%" stop-color="#2A1F35"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E8A838"/>
+      <stop offset="100%" stop-color="#C87941"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect x="40" y="40" width="720" height="370" rx="24" fill="rgba(255,255,255,0.04)" stroke="rgba(232,168,56,0.25)"/>
+  <text x="400" y="130" text-anchor="middle" fill="#E8A838" font-family="Arial,sans-serif" font-size="18" letter-spacing="6">UNIVERSITY ERP</text>
+  <text x="400" y="190" text-anchor="middle" fill="#FFFFFF" font-family="Georgia,serif" font-size="42" font-weight="700">ABC University</text>
+  <text x="400" y="230" text-anchor="middle" fill="#A89BB0" font-family="Arial,sans-serif" font-size="16">Management Portal · Admin · Student · Faculty</text>
+  <rect x="200" y="270" width="400" height="48" rx="12" fill="url(#accent)" opacity="0.9"/>
+  <text x="400" y="301" text-anchor="middle" fill="#1A1025" font-family="Arial,sans-serif" font-size="16" font-weight="700">Flask · MySQL · Chart.js · AI Chatbot</text>
+  <circle cx="120" cy="360" r="6" fill="#E8A838"/>
+  <circle cx="150" cy="360" r="6" fill="#C87941"/>
+  <circle cx="180" cy="360" r="6" fill="#E8C4A0"/>
+  <text x="400" y="390" text-anchor="middle" fill="#6B5F75" font-family="Arial,sans-serif" font-size="12">Role-based dashboards · Live analytics · Glassmorphism UI</text>
+</svg>

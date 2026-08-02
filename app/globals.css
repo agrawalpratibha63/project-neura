@@ -1,26 +1,167 @@
+@import "../styles/theme.css";
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Meridian Forge — Saffron + Copper unified brand */
+  --bg-primary: #1A1025;
+  --bg-secondary: #1F1528;
+  --bg-tertiary: #241530;
+  --bg-warm: #141210;
+  --bg-surface: #2A1F1A;
+
+  --accent-saffron: #E8A838;
+  --accent-saffron-light: #F0C060;
+  --accent-copper: #C87941;
+  --accent-cream: #E8C4A0;
+  --accent-ember: #D4622A;
+
+  --text-primary: #FAF7F2;
+  --text-muted: #A89BB0;
+  --text-warm: #9A8F85;
+
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(200, 121, 65, 0.15);
+  --glow-saffron: rgba(232, 168, 56, 0.45);
+  --glow-copper: rgba(200, 121, 65, 0.35);
+
+  /* Legacy aliases — mapped to new brand */
+  --primary-glow: var(--accent-saffron);
+  --energy-core: var(--accent-copper);
+  --ai-accent: var(--accent-saffron);
+  --human-accent: var(--accent-copper);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-orbitron: var(--font-orbitron);
+  --font-sans: var(--font-space-grotesk);
+
+  --color-saffron: #E8A838;
+  --color-saffron-light: #F0C060;
+  --color-copper: #C87941;
+  --color-cream: #E8C4A0;
+  --color-ember: #D4622A;
+  --color-plum: #1A1025;
+  --color-plum-mid: #1F1528;
+  --color-plum-light: #241530;
+  --color-warm: #141210;
+  --color-warm-surface: #2A1F1A;
+  --color-brand-muted: #A89BB0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+.font-orbitron {
+  font-family: var(--font-orbitron), monospace;
+}
+
+.brand-glow {
+  text-shadow: 0 0 20px var(--glow-saffron), 0 0 40px var(--glow-copper);
+}
+
+.glass-card {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9990;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoom-out {
+  from { opacity: 0; transform: scale(1.2); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-zoom-out {
+  animation: zoom-out 1s ease-out forwards;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@media (min-width: 768px) {
+  .service-card {
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  .service-card:hover {
+    transform: perspective(800px) rotateX(4deg) rotateY(-4deg) translateY(-4px);
+    border-color: rgba(200, 121, 65, 0.35);
+  }
+}
+
+@media (max-width: 767px) {
+  button:active,
+  a:active {
+    transform: scale(0.97);
+    transition: transform 0.1s;
+  }
+}
+
+.reveal-item {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Computer Vision Hand Control */
+body.gesture-mode {
+  cursor: none !important;
+}
+
+body.gesture-mode .cursor-dot,
+body.gesture-mode .cursor-ring {
+  display: none !important;
+}
+
+body.gesture-mode a,
+body.gesture-mode button {
+  cursor: none !important;
+}
+
+.gesture-cursor {
+  transform: translate(-50%, -50%);
+  will-change: left, top;
 }
