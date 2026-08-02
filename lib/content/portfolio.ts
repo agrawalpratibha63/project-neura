@@ -181,7 +181,7 @@ export const projects = [
       "My personal portfolio showcasing projects, skills, and creative work — AI/ML engineer profile with gesture navigation, Three.js visuals, and a modern interactive UI.",
     tech: ["Next.js", "React", "Three.js", "Tailwind CSS"],
     github: "https://github.com/agrawalpratibha63/project-neura",
-    live: "https://pratibha-portfolio.vercel.app",
+    live: "https://pratibha-agrawal.vercel.app",
     image: "/projects/portfolio-preview.png",
   },
   {
