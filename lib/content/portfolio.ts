@@ -50,7 +50,7 @@ export const about = {
   ],
   cta: { label: "Download Resume", href: "/resume.pdf" },
   stats: [
-    { label: "Projects", value: 3, suffix: "" },
+    { label: "Projects", value: 5, suffix: "" },
     { label: "Certifications", value: 3, suffix: "" },
     { label: "Hackathons", value: 2, suffix: "" },
     { label: "Technologies", value: 10, suffix: "+" },
@@ -162,6 +162,18 @@ export const skills = [
 
 export const projects = [
   {
+    id: "proj-voyageriq",
+    title: "VoyagerIQ",
+    subtitle: "Travel Sales Intelligence",
+    description:
+      "A full-stack travel connectivity sales dashboard with Google OAuth, real-time Supabase analytics, sales leaderboards, revenue trends, anomaly detection, and an AI sandbox assistant for reps and managers.",
+    tech: ["React", "Vite", "Supabase", "Tailwind CSS", "Recharts"],
+    github: "https://github.com/agrawalpratibha63/voyageriq-dashboard",
+    live: "https://voyageriq-dashboard.vercel.app",
+    image: "/projects/voyageriq-preview.png",
+    featured: true,
+  },
+  {
     id: "proj-graphics-studio",
     title: "Pratibha Graphics Studio",
     subtitle: "Graphics Portfolio Website",
@@ -171,7 +183,6 @@ export const projects = [
     github: "#",
     live: "https://pratibha-graphics-studio.vercel.app",
     image: "/graphics/studio-logo.png",
-    featured: true,
   },
   {
     id: "proj-portfolio",
