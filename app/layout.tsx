@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Orbitron, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import PortfolioChat from "@/components/assistant/PortfolioChat";
 import GlobalProviders from "@/components/providers/GlobalProviders";
 
 const orbitron = Orbitron({
@@ -28,7 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${orbitron.variable} ${spaceGrotesk.variable} h-full antialiased`}>
       <body className="min-h-full font-sans bg-plum text-[#FAF7F2]">
-        <GlobalProviders>{children}</GlobalProviders>
+        <GlobalProviders>
+          {children}
+          <PortfolioChat />
+        </GlobalProviders>
       </body>
     </html>
   );
