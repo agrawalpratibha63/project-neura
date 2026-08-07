@@ -6,7 +6,7 @@ export const siteMeta = {
   email: "agrawalpratibha63@gmail.com",
   location: "India",
   resumeUrl: "/resume.pdf",
-  searchQuery: "pratibha agrawal",
+  searchQuery: "Pratibha Agrawal",
 };
 
 export const socialLinks = [
@@ -176,13 +176,14 @@ export const projects = [
   {
     id: "proj-graphics-studio",
     title: "Pratibha Graphics Studio",
-    subtitle: "Graphics Portfolio Website",
+    subtitle: "Cinematic Graphics Portfolio Vault",
     description:
-      "A dedicated graphics portfolio website showcasing my full design work — logos, LinkedIn banners, YouTube thumbnails, business cards, wedding invitations, and client projects with category filters and a curated gallery.",
-    tech: ["Next.js", "React", "Tailwind CSS", "Vercel"],
-    github: "#",
+      "A dedicated graphics portfolio vault for logos, LinkedIn banners, YouTube thumbnails, business cards, wedding invitations, and client work — with auth-gated access, owner admin, and a cinematic atelier experience.",
+    tech: ["Expo", "React Native Web", "Supabase", "Reanimated", "Vercel"],
+    github: "https://github.com/agrawalpratibha63/pratibha-graphics-studio",
     live: "https://pratibha-graphics-studio.vercel.app",
     image: "/graphics/studio-logo.png",
+    featured: true,
   },
   {
     id: "proj-portfolio",
