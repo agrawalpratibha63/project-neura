@@ -1,0 +1,23 @@
+:root {
+  --bg-primary: #1A1025;
+  --bg-secondary: #1F1528;
+  --bg-tertiary: #241530;
+
+  --glass: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(200, 121, 65, 0.15);
+
+  --primary: #E8A838;
+  --secondary: #C87941;
+  --accent: #E8C4A0;
+
+  --text-primary: #FAF7F2;
+  --text-secondary: #A89BB0;
+
+  --glow-saffron: rgba(232, 168, 56, 0.4);
+  --glow-copper: rgba(200, 121, 65, 0.35);
+  --glow-cream: rgba(232, 196, 160, 0.25);
+
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+}
