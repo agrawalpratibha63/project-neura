@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081326"/>
+      <stop offset="0.55" stop-color="#111D38"/>
+      <stop offset="1" stop-color="#0B1022"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="380" y1="180" x2="1260" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EDBFF"/>
+      <stop offset="0.5" stop-color="#7C7CFF"/>
+      <stop offset="1" stop-color="#A764FF"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
+  <circle cx="1325" cy="140" r="190" fill="#6D5DFD" opacity="0.13" filter="url(#glow)"/>
+  <circle cx="270" cy="760" r="210" fill="#22D3EE" opacity="0.10" filter="url(#glow)"/>
+
+  <rect x="110" y="80" width="1380" height="740" rx="28" fill="#0E1730" stroke="#273655" stroke-width="2" filter="url(#soft)"/>
+  <rect x="110" y="80" width="1380" height="74" rx="28" fill="#111C37"/>
+  <circle cx="155" cy="117" r="8" fill="#FF6B6B"/>
+  <circle cx="183" cy="117" r="8" fill="#FFD166"/>
+  <circle cx="211" cy="117" r="8" fill="#5EE6A8"/>
+  <text x="254" y="126" font-family="Inter,Arial,sans-serif" font-size="23" font-weight="700" fill="#F7FAFF">Concepta</text>
+  <text x="1370" y="125" font-family="Inter,Arial,sans-serif" font-size="17" fill="#93A3C4">Smart Learning Workspace</text>
+
+  <rect x="140" y="184" width="235" height="606" rx="20" fill="#0B142A" stroke="#1D2B49"/>
+  <rect x="169" y="216" width="177" height="54" rx="14" fill="url(#accent)" opacity="0.95"/>
+  <text x="202" y="250" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="white">Dashboard</text>
+  <g font-family="Inter,Arial,sans-serif" font-size="18" fill="#8EA0C2">
+    <text x="181" y="326">My Roadmaps</text>
+    <text x="181" y="382">AI Tutor</text>
+    <text x="181" y="438">PDF Summarizer</text>
+    <text x="181" y="494">Study Resources</text>
+    <text x="181" y="550">Progress</text>
+  </g>
+  <rect x="165" y="676" width="184" height="82" rx="16" fill="#121F3D" stroke="#26385F"/>
+  <circle cx="202" cy="717" r="20" fill="#253A66"/>
+  <text x="236" y="710" font-family="Inter,Arial,sans-serif" font-size="15" fill="#8EA0C2">Learning streak</text>
+  <text x="236" y="735" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700" fill="#F7FAFF">12 days</text>
+
+  <text x="425" y="228" font-family="Inter,Arial,sans-serif" font-size="19" fill="#7E91B6">Welcome back</text>
+  <text x="425" y="278" font-family="Inter,Arial,sans-serif" font-size="40" font-weight="800" fill="#F7FAFF">Learn smarter with Concepta</text>
+  <text x="425" y="315" font-family="Inter,Arial,sans-serif" font-size="18" fill="#94A4C5">AI-powered roadmaps, tutoring, PDF insights and progress — in one place.</text>
+
+  <rect x="425" y="355" width="485" height="184" rx="22" fill="#121E39" stroke="#27395F"/>
+  <text x="457" y="395" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#F7FAFF">Your Learning Roadmap</text>
+  <rect x="457" y="425" width="405" height="12" rx="6" fill="#223250"/>
+  <rect x="457" y="425" width="270" height="12" rx="6" fill="url(#accent)"/>
+  <circle cx="489" cy="482" r="18" fill="#1C345A"/>
+  <circle cx="610" cy="482" r="18" fill="#1C345A"/>
+  <circle cx="731" cy="482" r="18" fill="#6D5DFD"/>
+  <circle cx="852" cy="482" r="18" fill="#1C345A"/>
+  <path d="M507 482H592M628 482H713M749 482H834" stroke="#324A72" stroke-width="4" stroke-linecap="round"/>
+  <g font-family="Inter,Arial,sans-serif" font-size="13" fill="#91A2C1">
+    <text x="467" y="520">Basics</text><text x="585" y="520">Practice</text><text x="701" y="520">Projects</text><text x="824" y="520">Revision</text>
+  </g>
+
+  <rect x="945" y="355" width="485" height="184" rx="22" fill="#121E39" stroke="#27395F"/>
+  <text x="977" y="395" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#F7FAFF">AI Tutor</text>
+  <rect x="977" y="425" width="421" height="80" rx="16" fill="#0B142A"/>
+  <circle cx="1013" cy="465" r="20" fill="url(#accent)"/>
+  <text x="1050" y="454" font-family="Inter,Arial,sans-serif" font-size="15" fill="#F2F6FF">Ask anything about your subject</text>
+  <text x="1050" y="478" font-family="Inter,Arial,sans-serif" font-size="14" fill="#7F91B6">“Explain neural networks simply…”</text>
+
+  <rect x="425" y="573" width="1005" height="180" rx="22" fill="#121E39" stroke="#27395F"/>
+  <text x="457" y="613" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#F7FAFF">Today’s Smart Study Plan</text>
+  <g>
+    <rect x="457" y="643" width="278" height="78" rx="16" fill="#0C1730"/>
+    <rect x="754" y="643" width="278" height="78" rx="16" fill="#0C1730"/>
+    <rect x="1051" y="643" width="347" height="78" rx="16" fill="#0C1730"/>
+    <text x="481" y="673" font-family="Inter,Arial,sans-serif" font-size="14" fill="#7E91B6">FOCUS</text>
+    <text x="481" y="701" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="700" fill="#F7FAFF">Machine Learning</text>
+    <text x="778" y="673" font-family="Inter,Arial,sans-serif" font-size="14" fill="#7E91B6">NEXT</text>
+    <text x="778" y="701" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="700" fill="#F7FAFF">PDF Revision</text>
+    <text x="1075" y="673" font-family="Inter,Arial,sans-serif" font-size="14" fill="#7E91B6">PROGRESS</text>
+    <text x="1075" y="701" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="700" fill="#F7FAFF">68% completed this week</text>
+  </g>
+
+  <text x="800" y="850" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#6F82A8">CONCEPTA · AI POWERED PERSONAL LEARNING</text>
+</svg>
