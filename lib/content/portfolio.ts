@@ -65,7 +65,7 @@ export const skills = [
     experience: "2+ years",
     level: "Advanced",
     summary: "Primary language for AI/ML, data work, and automation.",
-    usedIn: ["ML models", "Data analysis", "LearnPath AI", "Scripting"],
+    usedIn: ["ML models", "Data analysis", "Concepta", "Scripting"],
     tools: ["NumPy", "Pandas", "Matplotlib"],
   },
   {
@@ -125,7 +125,7 @@ export const skills = [
     experience: "1+ year",
     level: "Intermediate",
     summary: "Full-stack React apps with App Router and deployment.",
-    usedIn: ["This portfolio", "LearnPath AI", "Production sites"],
+    usedIn: ["This portfolio", "Concepta", "Production sites"],
     tools: ["App Router", "SSR", "Vercel"],
   },
   {
@@ -208,14 +208,16 @@ export const projects = [
     image: "/projects/university-preview.png",
   },
   {
-    id: "proj-learnpath",
-    title: "LearnPath AI",
-    subtitle: "AI Learning Platform",
-    description: "An AI-powered learning path platform. Interface image and project link will be added soon.",
-    tech: ["Python", "AI/ML", "React", "Next.js"],
-    github: "#",
-    live: "#",
-    image: "/projects/learnpath.jpg",
+    id: "proj-concepta",
+    title: "Concepta",
+    subtitle: "AI-Powered Smart Learning Platform",
+    description:
+      "A full-stack student learning platform with AI-generated roadmaps, subject-focused learning flows, saved learning resources, progress management, AI tutor support, and PDF-based study assistance designed to make learning more structured and practical.",
+    tech: ["Next.js", "React", "AI", "Firebase", "Framer Motion"],
+    github: "https://github.com/agrawalpratibha63/concepta",
+    live: "https://concepta-sable.vercel.app/",
+    image: "",
+    featured: true,
   },
 ];
 
