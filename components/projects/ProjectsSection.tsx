@@ -12,7 +12,8 @@ export default function ProjectsSection() {
   const project = projects[active];
   const hasLiveLink = project.live && project.live !== "#";
   const hasImage = Boolean(project.image?.trim());
-  const isLogoPreview = project.image?.includes("studio-logo") || project.image?.endsWith(".svg");
+  const isSvgPreview = project.image?.endsWith(".svg");
+  const isLogoPreview = project.image?.includes("studio-logo");
 
   const next = () => setActive((a) => (a + 1) % projects.length);
   const prev = () => setActive((a) => (a - 1 + projects.length) % projects.length);
@@ -40,15 +41,23 @@ export default function ProjectsSection() {
             <div className="relative aspect-video rounded-2xl border border-white/10 overflow-hidden bg-gradient-to-br from-saffron/5 to-copper/5">
               {hasImage ? (
                 <>
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className={isLogoPreview ? "object-contain p-6 md:p-10" : "object-cover"}
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
+                  {isSvgPreview ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="absolute inset-0 h-full w-full object-cover"
+                    />
+                  ) : (
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className={isLogoPreview ? "object-contain p-6 md:p-10" : "object-cover"}
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  )}
                   {!isLogoPreview && (
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#1A1025]/80 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#1A1025]/45 via-transparent to-transparent pointer-events-none" />
                   )}
                 </>
               ) : (
